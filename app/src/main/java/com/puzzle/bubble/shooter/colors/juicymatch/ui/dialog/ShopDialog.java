@@ -1,5 +1,6 @@
 package com.puzzle.bubble.shooter.colors.juicymatch.ui.dialog;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -92,7 +93,7 @@ public class ShopDialog extends BaseDialog implements View.OnClickListener {
         }
 
         @Override
-        public void onBindViewHolder(ProductViewHolder holder, int position) {
+        public void onBindViewHolder(ProductViewHolder holder, @SuppressLint("RecyclerView") int position) {
             // Init view holder
             Product product = mProducts.get(position);
             holder.mImageProduct.setImageResource(product.getDrawableId());
