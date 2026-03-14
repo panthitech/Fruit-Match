@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/fireworksview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.5"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/fireworksimg" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/image_ribbon"
+            android:layout_width="@dimen/_220sdp"
+            android:layout_height="0dp"
+            android:background="@drawable/ui_ribbon"
+            android:paddingBottom="@dimen/_16sdp"
+            app:layout_constraintDimensionRatio="3:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@font/baloo"
+            android:text="@string/txt_level"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_22sdp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@id/image_ribbon"
+            app:layout_constraintStart_toStartOf="@id/image_ribbon"
+            app:layout_constraintTop_toTopOf="@id/image_ribbon" />
+
+        <ImageView
+            android:id="@+id/image_star_bg_01"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:src="@drawable/ui_star_bg"
+            app:layout_constraintBottom_toTopOf="@id/txt_score"
+            app:layout_constraintEnd_toStartOf="@id/image_star_bg_02" />
+
+        <ImageView
+            android:id="@+id/image_star_bg_02"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:src="@drawable/ui_star_bg"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_ribbon" />
+
+        <ImageView
+            android:id="@+id/image_star_bg_03"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:src="@drawable/ui_star_bg"
+            app:layout_constraintBottom_toTopOf="@id/txt_score"
+            app:layout_constraintStart_toEndOf="@id/image_star_bg_02" />
+
+        <ImageView
+            android:id="@+id/image_star_01"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/ui_star"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/image_star_bg_01"
+            app:layout_constraintEnd_toEndOf="@id/image_star_bg_01"
+            app:layout_constraintStart_toStartOf="@id/image_star_bg_01"
+            app:layout_constraintTop_toTopOf="@id/image_star_bg_01" />
+
+        <ImageView
+            android:id="@+id/image_star_02"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/ui_star"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/image_star_bg_02"
+            app:layout_constraintEnd_toEndOf="@id/image_star_bg_02"
+            app:layout_constraintStart_toStartOf="@id/image_star_bg_02"
+            app:layout_constraintTop_toTopOf="@id/image_star_bg_02" />
+
+        <ImageView
+            android:id="@+id/image_star_03"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/ui_star"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@id/image_star_bg_03"
+            app:layout_constraintEnd_toEndOf="@id/image_star_bg_03"
+            app:layout_constraintStart_toStartOf="@id/image_star_bg_03"
+            app:layout_constraintTop_toTopOf="@id/image_star_bg_03" />
+
+        <TextView
+            android:id="@+id/txt_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="@font/baloo"
+            android:text="@string/txt_score"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_24sdp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_star_bg_02" />
+
+        <TextView
+            android:id="@+id/txt_final_score"
+            android:layout_width="@dimen/_230sdp"
+            android:layout_height="0dp"
+            android:background="@drawable/a11"
+            android:fontFamily="@font/baloo"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_30sdp"
+            android:textStyle="bold"
+            app:layout_constraintDimensionRatio="3:1"
+            app:layout_constraintEnd_toEndOf="@id/image_star_bg_03"
+            app:layout_constraintStart_toStartOf="@id/image_star_bg_01"
+            app:layout_constraintTop_toBottomOf="@id/txt_score" />
+
+        <com.nativegame.natyengine.ui.GameButton
+            android:id="@+id/btn_next"
+            android:layout_width="@dimen/_110sdp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:background="@drawable/ui_btn_next"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="5:2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txt_final_score" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

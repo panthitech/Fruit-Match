@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ContentDescription">
+
+    <ImageView
+        android:id="@+id/image_dialog"
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_a1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.nativegame.natyengine.ui.GameImage
+        android:id="@+id/image_product"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:src="@drawable/ui_booster_hammer"
+        app:layout_constraintEnd_toEndOf="@id/image_dialog"
+        app:layout_constraintStart_toStartOf="@id/image_dialog"
+        app:layout_constraintTop_toTopOf="@id/image_dialog" />
+
+    <com.nativegame.natyengine.ui.GameText
+        android:id="@+id/txt_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/baloo"
+        android:gravity="center"
+        android:text="@string/txt_confirm"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_24sdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/image_dialog"
+        app:layout_constraintStart_toStartOf="@id/image_dialog"
+        app:layout_constraintTop_toBottomOf="@+id/image_product" />
+
+    <com.nativegame.natyengine.ui.GameButton
+        android:id="@+id/btn_cancel"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_margin="@dimen/_8sdp"
+        android:background="@drawable/b5"
+        app:layout_constraintEnd_toEndOf="@id/image_dialog"
+        app:layout_constraintTop_toTopOf="@id/image_dialog" />
+
+    <com.nativegame.natyengine.ui.GameButton
+        android:id="@+id/btn_confirm"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="0dp"
+        android:background="@drawable/ui_btn_yes"
+        app:layout_constraintDimensionRatio="5:2"
+        app:layout_constraintEnd_toEndOf="@id/image_dialog"
+        app:layout_constraintStart_toStartOf="@id/image_dialog"
+        app:layout_constraintTop_toBottomOf="@id/txt_confirm" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="50dp"
+    tools:ignore="ContentDescription">
+
+    <com.nativegame.natyengine.ui.GameButton
+        android:id="@+id/btn_pause"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/setting_"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.nativegame.natyengine.ui.GameButton
+        android:id="@+id/btn_hammer"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginStart="@dimen/_22sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/ui_btn_booster_hammer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn_bomb"
+        app:layout_constraintStart_toEndOf="@id/btn_pause" />
+
+    <com.nativegame.natyengine.ui.GameButton
+        android:id="@+id/btn_bomb"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/ui_btn_booster_bomb"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn_glove"
+        app:layout_constraintStart_toEndOf="@id/btn_hammer" />
+
+    <com.nativegame.natyengine.ui.GameButton
+        android:id="@+id/btn_glove"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/ui_btn_booster_glove"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_bomb" />
+
+    <TextView
+        android:id="@+id/txt_hammer"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:background="@drawable/ui_item_field"
+        android:fontFamily="@font/baloo"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/btn_hammer"
+        app:layout_constraintEnd_toEndOf="@id/btn_hammer" />
+
+    <TextView
+        android:id="@+id/txt_bomb"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:background="@drawable/ui_item_field"
+        android:fontFamily="@font/baloo"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/btn_bomb"
+        app:layout_constraintEnd_toEndOf="@id/btn_bomb" />
+
+    <TextView
+        android:id="@+id/txt_gloves"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:background="@drawable/ui_item_field"
+        android:fontFamily="@font/baloo"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14sdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/btn_glove"
+        app:layout_constraintEnd_toEndOf="@id/btn_glove" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

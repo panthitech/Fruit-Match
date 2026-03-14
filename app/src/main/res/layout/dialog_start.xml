@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="ContentDescription">
+
+    <ImageView
+        android:id="@+id/image_dialog"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/a1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="3:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_field"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/_30sdp"
+        app:layout_constraintBottom_toBottomOf="@id/image_dialog"
+        app:layout_constraintDimensionRatio="3:1"
+        app:layout_constraintEnd_toEndOf="@id/image_ribbon"
+        app:layout_constraintStart_toStartOf="@id/image_ribbon"
+        app:layout_constraintTop_toTopOf="@id/image_dialog" />
+
+    <com.nativegame.natyengine.ui.GameImage
+        android:id="@+id/image_target_01"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_margin="@dimen/_5sdp"
+        android:src="@drawable/ui_target_cherry"
+        app:layout_constraintBottom_toBottomOf="@id/image_field"
+        app:layout_constraintEnd_toStartOf="@id/image_target_02"
+        app:layout_constraintTop_toTopOf="@id/image_field" />
+
+    <com.nativegame.natyengine.ui.GameImage
+        android:id="@+id/image_target_02"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:src="@drawable/ui_target_strawberry"
+        app:layout_constraintBottom_toBottomOf="@id/image_field"
+        app:layout_constraintEnd_toEndOf="@id/image_field"
+        app:layout_constraintStart_toStartOf="@id/image_field"
+        app:layout_constraintTop_toTopOf="@id/image_field" />
+
+    <com.nativegame.natyengine.ui.GameImage
+        android:id="@+id/image_target_03"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_margin="@dimen/_5sdp"
+        android:src="@drawable/ui_target_lemon"
+        app:layout_constraintBottom_toBottomOf="@id/image_field"
+        app:layout_constraintStart_toEndOf="@id/image_target_02"
+        app:layout_constraintTop_toTopOf="@id/image_field" />
+
+    <com.nativegame.natyengine.ui.GameText
+        android:id="@+id/txt_target_01"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/baloo"
+        android:gravity="bottom|end"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold"
+        app:layout_constraintDimensionRatio="1:2"
+        app:layout_constraintEnd_toEndOf="@+id/image_target_01"
+        app:layout_constraintTop_toTopOf="@+id/image_target_01" />
+
+    <com.nativegame.natyengine.ui.GameText
+        android:id="@+id/txt_target_02"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/baloo"
+        android:gravity="bottom|end"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold"
+        app:layout_constraintDimensionRatio="1:2"
+        app:layout_constraintEnd_toEndOf="@+id/image_target_02"
+        app:layout_constraintTop_toTopOf="@+id/image_target_02" />
+
+    <com.nativegame.natyengine.ui.GameText
+        android:id="@+id/txt_target_03"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/baloo"
+        android:gravity="bottom|end"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold"
+        app:layout_constraintDimensionRatio="1:2"
+        app:layout_constraintEnd_toEndOf="@+id/image_target_03"
+        app:layout_constraintTop_toTopOf="@+id/image_target_03" />
+
+    <ImageView
+        android:id="@+id/image_ribbon"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="0dp"
+        android:tint="#4caf50"
+        android:src="@drawable/ui_ribbon"
+        app:layout_constraintBottom_toTopOf="@id/image_dialog"
+        app:layout_constraintDimensionRatio="3:1"
+        app:layout_constraintEnd_toEndOf="@id/image_dialog"
+        app:layout_constraintStart_toStartOf="@id/image_dialog"
+        app:layout_constraintTop_toTopOf="@id/image_dialog" />
+
+    <TextView
+        android:id="@+id/txt_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/baloo"
+        android:gravity="center"
+        android:text="@string/txt_level"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_24sdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/image_ribbon"
+        app:layout_constraintStart_toStartOf="@id/image_ribbon"
+        app:layout_constraintTop_toTopOf="@id/image_ribbon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
