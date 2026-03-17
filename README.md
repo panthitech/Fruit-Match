@@ -15,13 +15,13 @@ Fruit Match is a fun and addictive puzzle game where players match colorful frui
 --
 ## 📱 Features
 
--✅ Hundreds of Levels: Enjoy exciting puzzles with increasing difficulty.
--✅ Boosters & Power-ups: Use bombs, color blasts, and lightning fruits to clear the board faster!
--✅ Special Challenges: Time-based levels, limited moves, and unique obstacles like ice blocks and locked fruits.
--✅ Daily Rewards: Log in every day to claim free boosters and extra moves.
--✅ Offline Mode: Play anytime, anywhere, without an internet connection!
--✅ Vibrant Graphics & Animations: Stunning fruit designs and smooth gameplay make the game visually appealing.
--✅ Fun for All Ages: Easy to learn but challenging to master—perfect for kids and adults!
+- ✅ Hundreds of Levels: Enjoy exciting puzzles with increasing difficulty.
+- ✅ Boosters & Power-ups: Use bombs, color blasts, and lightning fruits to clear the board faster!
+- ✅ Special Challenges: Time-based levels, limited moves, and unique obstacles like ice blocks and locked fruits.
+- ✅ Daily Rewards: Log in every day to claim free boosters and extra moves.
+- ✅ Offline Mode: Play anytime, anywhere, without an internet connection!
+- ✅ Vibrant Graphics & Animations: Stunning fruit designs and smooth gameplay make the game visually appealing.
+- ✅ Fun for All Ages: Easy to learn but challenging to master—perfect for kids and adults!
 
 🎮 Download Fruit Match today and start your delicious puzzle adventure! 🎮
 Match, swap, and blast your way to victory! 🍏✨
